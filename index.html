@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahfooz Alam — IT Support &amp; Systems Administrator</title>
+<meta name="description" content="Portfolio of Mahfooz Alam, IT Support and Systems Administrator specializing in hardware, software, and network operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- STATUS BAR : signature element, mimics an uptime/status monitor -->
+<div class="statusbar">
+  <span class="statusbar__dot" aria-hidden="true"></span>
+  <span class="statusbar__text">All systems operational</span>
+  <span class="statusbar__sep" aria-hidden="true">·</span>
+  <span class="statusbar__text statusbar__muted" id="statusClock">Last checked: just now</span>
+</div>
+
+<header class="nav">
+  <a href="#top" class="nav__brand">JB<span class="nav__brand-dot">.</span></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#process">Process</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">$ whoami</p>
+    <h1 class="hero__name">Mahfooz Alam</h1>
+    <p class="hero__role">IT Support &amp; Systems Administrator</p>
+    <p class="hero__bio">
+      I keep hardware running, software patched, and networks quiet.
+      Seven years fixing what's broken, hardening what's fragile, and
+      documenting it all so the next fix takes five minutes, not five hours.
+    </p>
+    <div class="hero__actions">
+      <a href="mailto:alammahfooz325@gmail.com" class="btn btn--primary">Get in touch</a>
+      <a href="https://drive.google.com/file/d/1woNC4Xg213raEtn86kPO0vrbXMAPZy4n/view?usp=sharing" class="btn btn--ghost" download>Download resume</a>
+    </div>
+    <dl class="stats">
+      <div class="stats__item">
+        <dt>1</dt><dd>years in IT support</dd>
+      </div>
+      <div class="stats__item">
+        <dt>1,200+</dt><dd>tickets resolved</dd>
+      </div>
+      <div class="stats__item">
+        <dt>99.9%</dt><dd>uptime maintained</dd>
+      </div>
+      <div class="stats__item">
+        <dt>60+</dt><dd>endpoints managed</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="eyebrow">$ ls ~/skills</p>
+    <h2 class="section__title">What I work with</h2>
+
+    <div class="skillgrid">
+
+      <div class="skillcard">
+        <h3>Hardware</h3>
+        <ul class="taglist">
+          <li>Desktop &amp; laptop repair</li>
+          <li>Printers &amp; peripherals</li>
+          <li>Server racking &amp; cabling</li>
+          <li>Component diagnostics</li>
+        </ul>
+      </div>
+
+      <div class="skillcard">
+        <h3>Operating Systems</h3>
+        <ul class="taglist">
+          <li>Windows Server / 10 / 11</li>
+          <li>macOS</li>
+          <li>Linux (Ubuntu, CentOS)</li>
+          <li>Active Directory</li>
+        </ul>
+      </div>
+
+      <div class="skillcard">
+        <h3>Networking</h3>
+        <ul class="taglist">
+          <li>TCP/IP, DNS, DHCP</li>
+          <li>VLANs &amp; switching</li>
+          <li>VPN configuration</li>
+          <li>Firewall management</li>
+        </ul>
+      </div>
+
+      <div class="skillcard">
+        <h3>Cloud &amp; Productivity</h3>
+        <ul class="taglist">
+          <li>Microsoft 365 / Entra ID</li>
+          <li>Google Workspace</li>
+          <li>Azure fundamentals</li>
+          <li>SharePoint admin</li>
+        </ul>
+      </div>
+
+      <div class="skillcard">
+        <h3>Security</h3>
+        <ul class="taglist">
+          <li>Endpoint protection</li>
+          <li>Patch management</li>
+          <li>Backup &amp; disaster recovery</li>
+          <li>Access control audits</li>
+        </ul>
+      </div>
+
+      <div class="skillcard">
+        <h3>Tools &amp; Ticketing</h3>
+        <ul class="taglist">
+          <li>Jira Service Management</li>
+          <li>Freshservice / Zendesk</li>
+          <li>PowerShell scripting</li>
+          <li>Remote monitoring (RMM)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <p class="eyebrow">$ cat experience.log</p>
+    <h2 class="section__title">Where I've worked</h2>
+
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__date">2025 — Present</div>
+        <div class="timeline__body">
+          <h3>IT Support Specialist</h3>
+          <p class="timeline__org">DeHaat</p>
+          <p>Lead support for a 250-seat office. Own the ticket queue,
+             manage the M365 tenant, and run weekly patch cycles across
+             80+ endpoints.</p>
+        </div>
+      </li>
+
+
+  <!-- PROCESS : real ordered sequence, numbering justified -->
+  <section class="section" id="process">
+    <p class="eyebrow">$ ./resolve.sh --ticket</p>
+    <h2 class="section__title">How I work a ticket</h2>
+
+    <ol class="process">
+      <li class="process__step">
+        <span class="process__num">01</span>
+        <h3>Diagnose</h3>
+        <p>Reproduce the issue, check logs, isolate whether it's
+           hardware, software, or user error before touching anything.</p>
+      </li>
+      <li class="process__step">
+        <span class="process__num">02</span>
+        <h3>Resolve</h3>
+        <p>Apply the smallest fix that actually solves it — not the
+           fastest one that just hides the symptom.</p>
+      </li>
+      <li class="process__step">
+        <span class="process__num">03</span>
+        <h3>Verify</h3>
+        <p>Confirm the fix holds under normal use, not just right after
+           the reboot.</p>
+      </li>
+      <li class="process__step">
+        <span class="process__num">04</span>
+        <h3>Document</h3>
+        <p>Write it up so the next person — often future me — doesn't
+           have to start from zero.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="eyebrow">$ tail -f projects.log</p>
+    <h2 class="section__title">Recent work</h2>
+
+    <div class="projectgrid">
+
+      <article class="projectcard">
+        <span class="projectcard__tag">Migration</span>
+        <h3>Office 365 tenant migration</h3>
+        <p><strong>Problem:</strong> 150 mailboxes on aging on-prem Exchange,
+           frequent outages.</p>
+        <p><strong>Action:</strong> Planned and executed a phased cutover
+           to Microsoft 365 with zero data loss.</p>
+        <p><strong>Result:</strong> Downtime dropped from ~4 hrs/month to
+           zero over the following year.</p>
+      </article>
+
+      <article class="projectcard">
+        <span class="projectcard__tag">Infrastructure</span>
+        <h3>Satellite office network rebuild</h3>
+        <p><strong>Problem:</strong> Flat, unmanaged network with recurring
+           outages and no segmentation.</p>
+        <p><strong>Action:</strong> Re-cabled the office, deployed managed
+           switches, and split traffic into VLANs.</p>
+        <p><strong>Result:</strong> Support tickets from that site fell by
+           70% in the first quarter.</p>
+      </article>
+
+      <article class="projectcard">
+        <span class="projectcard__tag">Automation</span>
+        <h3>Onboarding automation script</h3>
+        <p><strong>Problem:</strong> New-hire account setup took 45+ minutes
+           of manual clicking per person.</p>
+        <p><strong>Action:</strong> Built a PowerShell script to provision
+           accounts, groups, and licenses in one run.</p>
+        <p><strong>Result:</strong> Setup time cut to under 5 minutes per
+           new hire.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <p class="eyebrow">$ ./contact.sh --send</p>
+    <h2 class="section__title">Let's talk</h2>
+    <p class="contact__lede">
+      Open to full-time roles and contract support work. I usually
+      reply within a day.
+    </p>
+    <div class="contact__links">
+      <a href="mailto:jordan.blake@example.com" class="contact__link">
+        <span class="contact__label">Email</span>
+        <span class="contact__value">alammahfooz325@gmail.com</span>
+      </a>
+      <a href="tel:+15555550123" class="contact__link">
+        <span class="contact__label">Phone</span>
+        <span class="contact__value">+91 7643040087</span>
+      </a>
+      <a href="https://linkedin.com/in/your-handle" class="contact__link" target="_blank" rel="noopener">
+        <span class="contact__label">LinkedIn</span>
+        <span class="contact__value">linkedin.com/in/mahfooz087</span>
+      </a>
+      <a href="https://github.com/your-handle" class="contact__link" target="_blank" rel="noopener">
+        <span class="contact__label">GitHub</span>
+        <span class="contact__value">github.com/mahfooz01</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p><span class="footer__prompt">$</span> git commit -m "keep things running" &nbsp;·&nbsp; © <span id="year"></span> Jordan Blake</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
